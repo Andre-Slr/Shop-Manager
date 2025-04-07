@@ -4,4 +4,14 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: "/Shop-Manager/",
+  build: {
+    outDir: "docs",
+    assetsDir: "./",
+  },
+  rollupOptions: {
+    output: {
+      assetFileNames: "assets/[name][extname]",
+    }
+  }
 })
