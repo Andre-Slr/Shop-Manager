@@ -28,8 +28,8 @@ function AddItem() {
                 e.preventDefault();
                 addItem(item);
                 setItem({ name: "", description: "", price: 0 });
-                window.location.reload();
                 navigate("/dashboard");
+                window.location.reload();
             }}>
                 <div>
                     <label>Name:</label>
